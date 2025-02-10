@@ -1,4 +1,4 @@
-# UPatterns | Unity Patterns - Unity Package
+# UPatterns
 
 - Object Pool
 - FSM
