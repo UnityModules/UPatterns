@@ -3,7 +3,7 @@ using System;
 
 namespace UPatterns
 {
-    public abstract class Module<TOwner, TBaseModules> : MonoBehaviour where TOwner : MonoBehaviour where TBaseModules : Module<TOwner, TBaseModules>
+    public abstract class UModule<TOwner, TBaseModules> : MonoBehaviour where TOwner : MonoBehaviour where TBaseModules : UModule<TOwner, TBaseModules>
     {
         protected TOwner owner;
         public virtual bool AllowHorizontalMove => false;

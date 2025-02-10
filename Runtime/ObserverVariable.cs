@@ -2,7 +2,7 @@ using System;
 
 namespace UPatterns
 {
-    public class ObserverVariable<T>
+    public class UObserverVariable<T>
     {
         private T m_Value;
         public T Value
@@ -18,6 +18,6 @@ namespace UPatterns
         public event Action<T> OnChanged;
 
         public void SetEvent(Action<T> action) =>
-            this.OnChanged = action;
+            OnChanged = action;
     }
 }
